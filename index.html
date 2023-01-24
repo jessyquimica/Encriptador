@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador | Oracle+AluraLATAM</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="encriptor-caja">
+            <img class="logo" src="./imagenes/Logo.png" alt="logo-alura">
+
+        </div>
+       
+    </header>
+
+
+    <main>
+
+        <div class="encriptor-caja">
+            <div class="encriptador">
+                <form class="encriptador-texto">
+                    <div class="encriptador-texto-area">
+                        <textarea nanme="texto" id="texto" placeholder="Ingrese el texto aqui"></textarea>
+                        <div class="ingresa-texto">
+                            <div class="informacion">
+                                <img src="./imagenes/bi_exclamation-circle-fill.png">
+                                <p id="advertencia">Solo letras mayusculas y sin acento</p>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <button id="encriptar" class="boton-encriptar" type="button" onclick="encriptar()">¡Encriptar!</button>
+                            <button id="desincreptar"  class="boton-desincreptar" type="button" onclick="desencriptarr()">¡Desincreptar!</button>
+
+                        </div>
+
+
+                    </div>
+
+                </form>
+
+
+                <div class="resultado">
+                    <div class="soporte-resultado">
+
+                        <div class="contenido_no_resuelto" id="no-Resuelto">
+                            <div class="imagen-resultado">
+                                <img src="./imagenes/Logo_sobre_moda_femenina_minimalista_neutral__10_-removebg-preview 1.png" alt="imagen-muñeco">
+                                <p>Ningún mensaje fue encontrado.</p>
+                                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                            
+                            </div>  
+                           
+
+                        </div>
+                    
+
+                            
+                        <div class="contenido-resuelto" id="resuelto">
+                            <textarea name="texto-resultado" id="texto-Resultado" disabled></textarea>
+                            <button id="copiar" type="button" onclick="copiar()">Copiar</button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+        <footer>
+            <p class="copyright">© jessy de la cruz ocaña.</p>
+
+        </footer>
+
+
+        <script src="./encriptador.js"></script>
+
+
+
+
+
+
+
+    </main>
+
+    
+
+
+    
+</body>
+</html>
